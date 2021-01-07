@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--mon style-->
+    <style>
+        .ma-classe {
+            text-transform:uppercase;
+            background-color: rgb(185, 14, 42);
+        }
+    </style>
+    <title>Cours J-QUERY - Sélecteurs</title>
+  </head>
+  <body>
+
+   <main class="container">      
+
+       <header class="jumbotron bg-dark text-light">
+           <h1 class="display-3">Cours jquery - </h1>
+           <p class="lead" style="display: none">Vive le vent, vive le vent d'hiver ...</p>
+           <p class="lead">Write less, do more</p>
+       </header> 
+
+     <div class="row p-2">
+         <div class="col-md-2">
+             <button id="btn1" class="btn btn-outline-secondary">Simple clique</button>
+         </div>
+         <div class="col-md-2">
+             <button id="btn2" class="btn btn-outline-secondary" >Double clique</button>
+         </div>
+         <div class="col-md-2">
+             <button id="btn3" class="btn btn-outline-secondary">Bouton 3</button>
+         </div>
+         <div class="col-md-2">
+             <button id="btn4" class="btn btn-outline-secondary">ToggleClass</button>
+         </div>
+         <div class="col-md-2">
+             <button id="btn5" class="btn btn-outline-secondary">Bouton 5</button>
+         </div>
+         <div class="col-md-2">
+             <button id="btn6" class="btn btn-outline-secondary">Bouton 6</button>
+        </div>
+        <div class="col-md-4">
+            <h2>Les évènements </h2>
+            <p>Très utilisés, les évènements se déclenchent quand le visiteur effectue quelque chose qui correspond au script.</p>
+        </div><!-- fin col -->
+
+        <div class="col-md-5">
+            <ul>
+                <li><code>.ready()</code></li>
+                <li><code>.click()</code></li>
+                <li><code>.dblclick()</code></li>
+                <li><code>.hover()</code></li>
+                <li><code>.mouseleave()</code></li>
+                <li><code>.mousedown()</code></li>
+                <li><code>.mouseup()</code></li>
+                <li><code>.scroll()</code></li>
+                <li><code>.keydown()</code></li>
+                <li><code>.keyup()</code></li>
+                <li><code>.keypress()</code></li>
+            </ul>
+        </div><!-- fin col -->
+        <div class="col-md-3">
+            <p>Exemple : <code>$('h1).click(function(){<br>
+                //code à éxécuter <br>
+            });
+            </code></p>
+        </div><!-- fin col -->
+     </div><!--fin row-->
+
+     <div class="row">
+        <div class="col-md-4">
+            <h2>5- Les méthodes</h2>
+            <p>Par l'intermédiaire des méthodes, on va effectuer une action précise sur un ou plusieurs éléments du DOM. On peut bien évidemment assigner plusieurs méthodes à un seul élément cible.</p>
+        </div>
+        <div class="col-md-8">
+            <ul>
+                <li>.css() // ex. <code>$('p').css('color','blue');</code> Attention à l'absence de la virgule lors de la dernière propriété ccs apportée.</li>
+                <li>.html()</li>
+                <li>.text()</li>
+                <li>.attr()</li>
+                <li>.addClass</li>
+                <li>Etc.</li>
+                <li><a href="https://api.jquery.com/category/manipulation/">Les méthodes sur le site de JQuery</a></li>
+            </ul>
+        </div><!-- fin col -->
+    </div><!-- fin row -->
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Les effets</h2>
+            <p>Vous pouvez apporter des effets particuliers et très simples d'utilisation à l'élément cible.</p>
+        </div>
+        <div class="col-6">
+            <ul>
+                <li><code>.hide()</code></li>
+                <li><code>.show()</code></li>
+                <li><code>.fadeOut()</code></li>
+                <li><code>.fadeIn()</code></li>
+                <li><code>.toggle()</code></li>
+                <li><code>.animate()</code></li>
+                <li>Etc.</li>
+                <li><a href="https://api.jquery.com/category/effects/"> Les effets sur le site de JQuery </a></li>
+            </ul>
+        </div><!-- fin col -->
+    </div><!-- fin row -->
+   </main><!--fin de main-->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+
+    <!--jQuery  en local version complètes-->
+    <script src="../jQuery/jQuery-3.5.1.js"></script>
+
+    <script>
+        // à compléter
+        $(document).ready(function(){
+
+        })
+
+        // 1- 1ère fonction sur le btn1
+        $(function(){
+            $('h1').append('Les évènements');
+
+            $('#btn1').click(function(){
+                $('h1').css({
+                    'color' : 'lightblue',
+                    'font-weight' : 'bold'
+                })
+                
+            })
+        });
+
+        // 2 - 2ème fonction sur le btn2
+        $('#btn2').dblclick(function(){
+            $('body').css({
+                'background-color': 'black',
+            })
+        });
+
+        // 3- 3ème fonction sur btn3
+        $('#btn3').click(function(){
+            $('p').toggle();
+        });
+
+        // 4- 4ème fonction sur le btn4
+
+        $('#btn4').click(function(){
+            $('h1').toggleClass('ma-classe');
+
+        });
+
+        // 5- 5ème fonction sur le btn5
+        // $('#btn5').mouseenter(function(){
+        //     $('main').removeClass('bg-info').addClass('ma-classe');
+        // });
+
+        // $('#btn5').mouseleave(function(){
+        //     $('main').addClass('bg-warning').removeClass('ma-classe');
+        // });
+
+       //6- btn6
+
+       function animation(){
+           $('h1').animate({margin: '50px'}, 3000);
+
+           };
+
+           $('#btn6').click(function(){
+               $('h1').on(animation());
+
+           });
+       
+       //rajoute des coucou lorsque qu'on clique sur le slogan
+       // 7- La methode on()
+       $('p').on('click', function(){
+           $(this).append('coucou !');
+       });
+
+    </script>
+
+  </body>
+</html>
